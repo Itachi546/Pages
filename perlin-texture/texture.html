@@ -7,22 +7,19 @@
     <style>
         .ui {
             position:absolute;
-            top:2%;
-            left:60%;
         }
     </style>
   </head>
   <body>
+    <canvas id="canvas" style="border: 2px solid black"></canvas>
     <div class="ui">
         <select id="dropdown">
           <option value="checker">Checker</option>
           <option value="xor">Xor</option>
           <option value="marble">Marble</option>
           <option value="wood">Wood</option>
-          
         </select>
       </div>
-    <canvas id="canvas" style="border: 2px solid black"></canvas>
     <script src="../noise/perlin.js"></script>
     <script src="texture.js"></script>
   </body>

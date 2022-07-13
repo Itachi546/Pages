@@ -20,11 +20,10 @@
       }
 
       .card {
-        width: 32%;
-        padding:0.5rem;
+        width: 43%;
+        padding: 0.5rem;
         margin: 3%;
-        max-width: 30rem;
-        display:flex;
+        display: flex;
         flex-direction: column;
         align-items: center;
       }
@@ -35,40 +34,49 @@
         flex-wrap: wrap;
         margin: 1rem;
         padding: 2rem;
+        align-items: center;
+        justify-content: center;
       }
 
-      .card-body
-      {
+      .card-body {
         display: flex;
         flex-direction: column;
         align-items: center;
       }
       .card-title {
-        color:white;
+        color: white;
         letter-spacing: 0.15rem;
         text-transform: uppercase;
       }
       .card-subtitle {
-        color:white;
-        font-size:1rem;
+        color: white;
+        font-size: 1rem;
       }
       .btn {
-        margin-top:1rem;  
+        margin-top: 1rem;
         text-transform: uppercase;
         background-color: rgb(168, 161, 161);
-        font-size:0.8rem;
+        font-size: 0.8rem;
         letter-spacing: 0.2rem;
-        padding:0.4rem 0.5rem;
-        cursor:pointer;
+        padding: 0.4rem 0.5rem;
+        cursor: pointer;
         text-decoration: none;
-        color:black;
+        color: black;
       }
 
-      .btn:hover
-      {
-        background-color: rgb(197, 192, 192);;
+      .btn:hover {
+        background-color: rgb(197, 192, 192);
       }
 
+      @media screen and (max-width: 972px) {
+        .card {
+          width: 44%;
+          margin: 3%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
     </style>
   </head>
   <body>
@@ -76,30 +84,32 @@
       <h1 class="title">Graphics</h1>
     </div>
     <div class="col">
-
       <div class="card">
         <div class="header">
           <img src="./images/flow-field.png" width="500px" height="400px" />
         </div>
         <div class="card-body">
           <div class="card-title">Perlin Flow Field</div>
-          <div class="card-subtitle">Pattern generated when a particle follow the path in perlin flow field.</div>
+          <div class="card-subtitle">
+            Pattern generated when a particle follow the path in perlin flow
+            field.
+          </div>
           <a class="btn" href="./flow-field/field.html">Demo</a>
         </div>
       </div>
-
+      
       <div class="card">
         <div class="header">
           <img src="./images/perlin-texture.png" width="500px" height="400px" />
         </div>
         <div class="card-body">
           <div class="card-title">Procedural Texture</div>
-          <div class="card-subtitle">Various texture pattern generated using procedural technique</div>
+          <div class="card-subtitle">
+            Various texture pattern generated using procedural technique
+          </div>
           <a class="btn" href="./perlin-texture/texture.html">Demo</a>
         </div>
       </div>
-
-      
     </div>
   </body>
 </html>
